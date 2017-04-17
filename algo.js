@@ -49,3 +49,25 @@ function findPairSort(array, n, sum) {
 
 
 findPairSort(array, n, 10)
+
+
+//finding sub arrays with a value of X using naive solution.
+
+
+array=[3, 4, -7, 3, 1, 3, 1, -4, -2, -2]
+
+function printSubarrays(array) {
+  for(i=0;i<n;i++) {
+    sum=0
+    for(j=i;j<n;j++) {
+      sum += array[j]
+
+      if(sum == 0) {
+        console.log("Subarray [" + i + ".." + j + "]")
+        
+      }
+    }
+  }
+}
+
+printSubarrays(array)
