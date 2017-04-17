@@ -64,10 +64,41 @@ function printSubarrays(array) {
 
       if(sum == 0) {
         console.log("Subarray [" + i + ".." + j + "]")
-        
+
       }
     }
   }
 }
 
 printSubarrays(array)
+
+
+array=[0,1,1,1,0,0,1,1,0]
+//sorting a binary array
+
+function sortBinary(array) {
+   for(i=0;i<n;i++)  {
+     var zeros = 0
+
+     if(array[i] == 0) {
+       zeros++
+       console.log(zeros)
+     }
+
+   }
+     zeros = 5
+     var k = 0
+     while(zeros-- != 0) {
+       array[k] = 0
+       k++
+     }
+     while(k < n) {
+       array[k] = 1
+       k++
+     }
+
+
+   console.log(array)
+}
+
+sortBinary(array)
